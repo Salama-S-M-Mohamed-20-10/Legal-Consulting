@@ -1,0 +1,157 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navSign
+{
+    background-color: rgb(37,204,247);
+    padding: 10px 0;
+    font-weight:bold;
+    width: 100%;
+}
+.navSign .navbar-brand
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}
+.navSign .navbar-nav
+{
+    margin-left: auto;
+}
+.navSign ul li a
+{
+        position: relative;
+        color: #fff;
+        margin-left: 20px;
+        transition: ease-in-out 0.3s;
+}
+.navSign ul li a::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin: 0 0;
+    transition: 0.3s;
+}
+.navSign ul li a::after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin:right;
+    transition: 0.3s;
+    top: 39px;
+    transition: ease-in-out 0.3s;
+}
+.navSign ul li a:hover::after
+{
+    transform : rotate(0deg);
+    right: 50%;
+    transform: translate(50%);
+}
+.navSign ul li a:hover::before
+{
+    transform : rotate(0deg);
+    left: 50%;
+    transform: translate(-50%);
+}
+.navSign .navbar-toggler
+{
+    color: transparent;
+}
+.navbar-nav .nav-link
+{
+    text-align: center;
+}
+nav .navbar .navbar-toggler.collapse{
+    outline:none !important;
+    color: #fff !important;
+    border: #fff !important;
+}
+.navSign .navbar-toggler span
+{
+    display: block;
+    background-color: #FC427B;
+    width: 30px;
+    height: 3px;
+    transition: 0.3s;
+}
+.navSign .navbar-toggler span.two
+{
+    margin: 7px 0;
+}
+
+/* end navbar */
+.singIn
+{
+    position: relative;
+    height: 600px;
+    text-align: right;
+}
+.singIn .box
+{
+    background-color: #fff;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 10px;
+}
+.singIn .box label
+{
+    color: rgb(136, 131, 131);
+}
+.singIn .form-check-input[type=checkbox]
+{
+    margin-left: 165px;
+}
+.singIn button.enter
+{
+    background-color: #FC427B;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+.singIn .forget
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.singIn .facebook
+{
+    background-color: rgb(66, 103, 178);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+.singIn .facebook p
+{
+    display: inline;
+    margin-left: 32%;
+}
+.singIn .facebook a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.singIn .signUp
+{
+    text-align: center;
+    margin-top: 15px;
+}

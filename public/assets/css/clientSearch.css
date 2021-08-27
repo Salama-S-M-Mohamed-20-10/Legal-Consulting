@@ -1,0 +1,499 @@
+body
+{
+    font-family: 'Changa', sans-serif;
+    overflow-y: scroll;
+    
+}
+
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navSign
+{
+    background-color: rgb(37,204,247);
+    padding: 10px 0;
+    font-weight:bold;
+    width: 100%;
+}
+.navSign .navbar-brand
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}
+.navSign .navbar-nav
+{
+    margin-left: auto;
+}
+.navSign ul li a
+{
+        position: relative;
+        color: #fff;
+        margin-left: 20px;
+        transition: ease-in-out 0.3s;
+}
+.navSign ul li a::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin: 0 0;
+    transition: 0.3s;
+}
+.navSign ul li a::after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin:right;
+    transition: 0.3s;
+    top: 39px;
+    transition: ease-in-out 0.3s;
+}
+.navSign ul li a:hover::after
+{
+    transform : rotate(0deg);
+    right: 50%;
+    transform: translate(50%);
+}
+.navSign ul li a:hover::before
+{
+    transform : rotate(0deg);
+    left: 50%;
+    transform: translate(-50%);
+}
+.navSign .navbar-toggler
+{
+    color: transparent;
+}
+.navbar-nav .nav-link
+{
+    text-align: center;
+}
+nav .navbar .navbar-toggler.collapse{
+    outline:none !important;
+    color: #fff !important;
+    border: #fff !important;
+}
+.navSign .navbar-toggler span
+{
+    display: block;
+    background-color: #FC427B;
+    width: 30px;
+    height: 3px;
+    transition: 0.3s;
+}
+.navSign .navbar-toggler span.two
+{
+    margin: 7px 0;
+}
+
+/* start resultSearch*/
+body
+{
+    background-color: rgb(226, 230, 234);
+}
+.resultSearch
+{
+    margin-top: 20px;
+    text-align: right
+}
+.title h3
+{   margin-top: 30px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(116, 116, 112);
+}
+.title h3 span
+{
+    color: red;
+    font-size: 25px
+}
+.resultSearch .lawyerImg img
+{
+    width: 100%;
+    border-radius: 50%
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px)  {
+    .resultSearch .lawyerImg img
+    {
+        margin-left: 450px;
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .resultSearch .lawyerImg img
+    {
+        margin-left: 320px;
+    }
+}
+@media(max-width: 575px)
+{
+    .resultSearch .lawyerImg img
+    {
+        width: auto;
+    }
+}
+.resultSearch .lawyerinfo h2
+{
+    line-height: 35px;
+    font-size: 21px;
+    color: rgb(37,204,247) !important;
+    margin-bottom: 30px
+}
+.resultSearch .lawyerinfo span
+{
+    font-size: 15px;
+    padding-left: 3px
+}
+.resultSearch .lawyerinfo h2 a
+{
+    text-decoration: none;
+    color: rgb(37,204,247);
+}
+.cool-link {
+    display: inline-block;
+    color: #FC427B;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FC427B;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+i
+{
+    color: #FC427B;
+    font-size: 26px;
+    margin-bottom: 25px
+}
+.fa-balance-scale:before {
+    content: "\f24e";
+    margin-right: 22px;
+}
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    margin-right: 27px;
+}
+.fa-building:before {
+    content: "\f1ad";
+    margin-right: 25px;
+}
+
+h5
+{
+    font-weight: normal;
+    color: #848484;
+}
+
+/* swiper.js style */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* style for lawyerInfoSearch */
+.chat h2
+{
+    font-weight: normal;
+    font-size: 24px;
+    color: #898a87
+}
+.navBar ul li a {
+    color: #fff !important;
+}
+@media (min-width: 991px)
+{
+.col-lg-4 {
+    text-align: left;
+}
+
+}
+@media (max-width: 991px)
+{
+    .fot .info ul.social {
+        padding-left: 0px;
+        text-align: center !important;
+    }
+    .resultSearch .lawyerinfo h2 {
+        padding-top: 45px;
+    }
+}
+@media (max-width: 767px){
+    .reversion .rev {
+        margin-left: 77px !important;
+    }
+}
+/* avaiblety of chat lawyer */
+.avatar-badge
+{
+    width: 13px;
+    height: 13px;
+    bottom: 11px;
+}
+
+/* limited height for chat */
+.chat-widget
+{
+    height: 600px;
+    overflow: overlay;
+}
+/* for point online and offline down few pxs */
+.comment .avatar-badge
+{
+    top: 23px
+}
+
+/* style for ul style (بتاع الحجز) */
+
+.reversion .day h4
+{
+    width: 141px;
+    margin-left: 79px;
+    background-color: #FC427B;
+    color: #fff;
+    border-radius: 2px
+    
+}
+.reversion ul
+{
+    height: 250px;
+    width: 140px;
+    overflow: overlay;
+    list-style: none;
+    margin-left: 80px;
+    background-color: rgb(37,204,247) !important;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center
+}
+
+.reversion ul li
+{
+    margin-bottom: 10px;
+
+    top: 0px;
+    left: 0px;
+    transform: translate(-22px, 10px);
+    cursor: pointer;
+    transition: ease-in-out 0.2s all;
+    
+}
+.reversion ul li:hover
+{
+    background-color: #898a87
+}
+.reversion ul li a
+{
+    text-decoration: none;
+    color: #fff
+}
+.current
+{
+    background-color: #FC427B
+}
+.reversion .rev
+{
+    width: 144px;
+    margin-left: 11px;
+    background-color: rgb(247, 62, 62);
+    color: #fff;
+    font-weight: bolder;
+    transition: ease-in-out 0.3s all;
+}
+.reversion .rev:hover
+{
+    background-color: red
+}
+
+.myList h3
+{
+    font-size: larger;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px, 101px);
+}
+.disabled {
+    pointer-events:none;
+    opacity:0.6;         
+}
+.add ul
+{
+    padding-left: 32px;
+}
+/**  responsive *****/
+@media (min-width: 768px){
+.col-md-12 {
+    margin-right:65px;
+}
+}
+
+/***********/
+.fot .info ul.social {
+    padding-left: 20px;
+    text-align: inherit;
+}
+
+.fot .logo a img
+{
+    width: 20%;
+    margin-top: -25px;
+}
+/* for user dropdown */
+@media (max-width: 991px){
+    .dropdown {
+        text-align:center;
+        padding-left: 33px;
+    }
+    .navbar-nav .dropdown-menu{
+        background-color: unset; 
+        border: unset; 
+        text-align: center;
+        padding-bottom: 30px 
+        }
+    .dropdown-item{
+        color: #fff;
+        font-weight: 600;
+        transition:all 0.3s ease-in-out;
+    }
+    .dropdown-item:hover{
+        background-color:unset;
+        color: #FC427B
+    }
+    } 
+    /* for footer */
+    @media (max-width: 991px){
+        .dash {
+            text-align: -webkit-center;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        .fot .lawyer h2,
+        .fot .logo a img
+        {
+            padding-top: 33px;
+        }
+       
+        } 
+
+        @media (max-width: 767px){
+            .fot .help h2
+            {
+                padding-top: 33px;
+            }
+           
+            } 
+
+ 
+/* radio */
+form .myList
+{
+    height: 250px;
+    width: 140px;
+    overflow: overlay;
+    list-style: none;
+    margin-left: 80px;
+    background-color: rgb(37,204,247) !important;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center
+}
+.myList input {
+    visibility:hidden;
+}
+label {
+    cursor: pointer;
+    display: inherit;
+}
+input:checked + label {
+    background: #FC427B;
+}
+ .rev
+{
+    width: 144px;
+    margin-left: 11px;
+    background-color: rgb(247, 62, 62);
+    color: #fff;
+    font-weight: bolder;
+    transition: ease-in-out 0.3s all;
+}
+.secLabel label
+{
+    font-size: 18px
+}
+.av
+{
+    top: 0;
+    left: 0;
+    transform: translate(0% , 103%)
+}
+.av h3
+{
+    margin-top: -63px
+}
+
+.line
+{
+    color: #898a87 !important;
+    text-decoration: line-through;
+    pointer-events: none;
+
+}

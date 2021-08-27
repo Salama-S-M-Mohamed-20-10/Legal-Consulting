@@ -1,0 +1,100 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* constant responsive for foter and dropdwon */ 
+/* dropdown */
+.dropdown button
+{
+    background-color: none;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+}
+.dropdown button:hover
+{
+    color:white
+}
+ .btn:focus
+{
+    box-shadow: unset
+}
+
+.dropdown-item
+{
+    color: rgb(82, 134, 184)
+}
+.dropdown-item:hover
+{
+    color: rgb(82, 134, 184)
+}
+.dropdown-item i
+{
+    padding-left: 5px
+}
+.navbar-expand-lg,
+.navbar-nav  .dropdown-menu
+{
+    text-align: right;
+    color: turquoise !important
+}
+
+/**  responsive *****/
+
+.fot .info ul.social {
+    padding-left: 20px;
+    text-align: inherit;
+}
+
+.fot .logo a img
+{
+    width: 20%;
+}
+@media (max-width: 991px){
+    .dropdown {
+        text-align:center;
+        padding-left: 33px;
+    }
+    .navbar-nav .dropdown-menu{
+        background-color: unset; 
+        border: unset; 
+        text-align: center;
+        padding-bottom: 30px 
+        }
+    .dropdown-item{
+        color: #fff;
+        font-weight: 600;
+        transition:all 0.3s ease-in-out;
+    }
+    .dropdown-item:hover{
+        background-color:unset;
+        color: #FC427B
+    }
+    } 
+    
+    @media (max-width: 991px){
+        .dash {
+            text-align: -webkit-center;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        .fot .lawyer h2,
+        .fot .logo a img
+        {
+            padding-top: 33px;
+        }
+       
+        } 
+
+        @media (max-width: 767px){
+            .fot .help h2
+            {
+                padding-top: 33px;
+            }
+           
+            } 
+    

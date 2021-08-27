@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>clientInfo</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap-rtl.min.css">
+        <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="plugins/icon-kit/dist/css/iconkit.min.css">
+        <link rel="stylesheet" href="plugins/ionicons/dist/css/ionicons.min.css">
+        <link rel="stylesheet" href="plugins/perfect-scrollbar/css/perfect-scrollbar.css">
+
+        <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+
+        <link rel="stylesheet" href="plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+
+        <link rel="stylesheet" href="plugins/jquery-toast-plugin/dist/jquery.toast.min.css">
+
+        <link rel="stylesheet" href="dist/css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+        <!--for chat and another -->
+        <link rel="stylesheet" href="chatPlugin/css/app.css">
+        <link rel="stylesheet" href="dist/css/moreStyle.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+        <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script>(function(w,d,u){w.readyQ=[];w.bindReadyQ=[];function p(x,y){if(x=="ready"){w.bindReadyQ.push(y);}else{w.readyQ.push(x);}};var a={ready:p,bind:p};w.$=w.jQuery=function(f){if(f===d||f===u){return a}else{p(f)}}})(window,document)</script>
+
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+            <header class="header-top" header-theme="light">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between">
+                        <div class="top-menu d-flex align-items-center">
+                            <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+                            <button type="button" id="navbar-fullscreen" class="nav-link"><i class="ik ik-maximize"></i></button>
+                        </div>
+						
+                        <div class="top-menu d-flex align-items-center userDrops">
+                             <div class="dropdown mr-10">
+                                <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="img/user.jpg" alt=""></a>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="profile.html"><i class="ik ik-user dropdown-icon"></i> الملف الشخصى</a>
+                                    <a class="dropdown-item" href="changePw.html"><i class="ik ik-lock dropdown-icon"></i> تغيير كلمة السر</a>
+                                    <a class="dropdown-item" href="../signLwayer.html"><i class="ik ik-power dropdown-icon"></i> تسجيل خروج</a>
+                                </div>
+                            </div>
+ 
+                             <div class="dropdown spDroplist">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="avatar" src="img/egypt.png" alt=""></a>
+                            <div class="dropdown-menu dropdown-menu-left animated bounceInDown">
+								<!--<a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> عربي<img src="img/saudi-arabia.png" alt=""></a>-->
+								<a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> English<img src="img/united-states.png" alt=""></a>
+							</div>
+                            </div>
+
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-bell"></i><span class="badge bg-danger">3</span></a>
+                                <div class="dropdown-menu dropdown-menu-left notification-dropdown" aria-labelledby="notiDropdown">
+                                    <h4 class="header">تنبيهات الحجوزات</h4>
+                                    <div class="notifications-wrap">
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-calendar"></i>  
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم حجز معاد</span> 
+                                                <span class="media-content">2021-10-04 - 1 PM ...</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-calendar"></i>  
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم حجز معاد</span> 
+                                                <span class="media-content">2021-10-04 - 2 PM ...</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-calendar"></i> 
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم حجز معاد</span> 
+                                                <span class="media-content">2021-10-04 - 3 PM ...</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="footer"><a href="booking.html">عرض كل الحجوزات</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-wrap">
+                <div class="app-sidebar colored">
+                    <div class="sidebar-header">
+                        <a class="header-brand" href="index.html">
+                            <div class="logo-img">
+                               <img src="src/img/logo.png" class="header-brand-img" alt="محاميك"> 
+                            </div>
+                            <span class="text">محاميك</span>
+                        </a>
+                        <button type="button" class="nav-toggle"><i data-toggle="expanded" class="ik ik-toggle-right toggle-icon"></i></button>
+                        <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
+                    </div>
+                    
+                    <div class="sidebar-content">
+                        <div class="nav-container">
+                            <nav id="main-menu-navigation" class="navigation-main">
+                                <div class="nav-item">
+                                    <a href="index.html"><i class="fas fa-calendar-alt"></i><span>جدول المواعيد</span></a>
+                                </div>
+                                <div class="nav-item">
+                                    <a href="booking.html"><i class="fas fa-calendar-check"></i><span>الحجوزات</span></a>
+                                </div>
+                                <div class="nav-item active">
+                                    <a href="chat.html"><i class="ik ik-message-circle"></i><span>غرفة الرسائل</span>
+                                        <span class="badge bg-danger">+99</span>
+                                    </a>
+                                </div>
+                                 
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="container-fluid">
+					
+
+					
+<div class="page-header">
+	<div class="row align-items-end">
+		<div class="col-lg-8">
+			<div class="page-header-title">
+                <i class="ik ik-message-circle "></i>
+				<div class="d-inline">
+					<h2> الرسائل</h2>
+					<span>غرفة الرسائل</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<nav class="breadcrumb-container" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="index.html"><i class="fas fa-calendar-alt"></i></a>
+					</li>
+
+					<li class="breadcrumb-item active" aria-current="page">غرفة الرسائل</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+</div>
+                            <!-- Customer overview start -->
+
+<div class="row mt-40">
+
+ <div class="col-md-12">
+  <div class="card">
+    <div class="card-header">
+        <h3>معلومات العميل</h3>
+    <div class="card-header-right">
+		<ul class="list-unstyled card-option">
+            <li><i class="ik ik-minus minimize-card"></i></li>
+        </ul>
+    </div>
+</div>
+<div class="card-body progress-task">
+  <div class="dd" data-plugin="nestable">
+    <div class="container-fluid">
+        <div class="card my-3 shadow b-0">
+            <div class="row no-gutters">
+                <div class="col-md-3 d-none d-md-block text-truncate white b-r scrol">
+                    <div class="card-header white">
+                        <form>
+                            <div class="form-group has-right-icon m-0">
+                                <input class="form-control light r-30" placeholder="بحث" type="text" style="text-align:left">
+                                <i class="icon-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="slimScroll"  data-height="600">
+                        <ul class="list-unstyled">
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u4.png" alt="">
+                                    <span class="avatar-badge has-indicator online">
+                            
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>amir hossni</h6>
+                                    <span class="badge badge-success pt-1 pb-1 r-3 float-right">10</span>
+
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u3.png" alt="">
+                                    <span class="avatar-badge has-indicator offline">
+                
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>10 minute ago</span>
+                                    </small>
+                                    <h6>ahmed mohamed</h6>
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u5.png" alt="">
+                                    <span class="avatar-badge has-indicator offline">
+                                
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>saeed saad</h6>
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action light border-left border-primary">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u6.png" alt="">
+                                    <span class="avatar-badge has-indicator online">
+                            
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>sara mohamed</h6>
+                                    <span class="badge badge-success pt-1 pb-1 r-3 float-right">10</span>
+
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u7.png" alt="">
+                                    <span class="avatar-badge has-indicator offline">
+                    
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>ahmed ahmed</h6>
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u8.png" alt="">
+                                    <span class="avatar-badge has-indicator online">
+                            
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>wael mohmaed</h6>
+                                    <span class="badge badge-success pt-1 pb-1 r-3 float-right">10</span>
+
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u9.png" alt="">
+                                    <span class="avatar-badge has-indicator online">
+                        
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>Sara Joe</h6>
+                                    <span class="badge badge-success pt-1 pb-1 r-3 float-right">10</span>
+
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                            <li class="media p-4 b-b list-group-item-action">
+                                <div class="avatar avatar-md mr-3">
+                                    <img src="chatPlugin/img/dummy/u10.png" alt="">
+                                    <span class="avatar-badge has-indicator offline">
+                   
+                          </span>
+                                </div>
+                                <div class="media-body text-truncate">
+                                    <small class="float-right">
+                                        <span>3 minute ago</span>
+                                    </small>
+                                    <h6>Sara Joe</h6>
+                                    <span class="badge badge-success pt-1 pb-1 r-3 float-right">10</span>
+
+                                    <small>Vivamus diam elit diam, consectetur elit.</small>
+                                </div>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-12 white">
+                    <div class="">
+                        <div class="card-body  chat-widget p-3 slimScroll" data-height="600">
+                            <div class="w-body w-scroll ">
+                                <ul class="list-unstyled">
+                                    <!-- Chat by us. Use the class "by-me". -->
+                                    <li class="by-me">
+                                        <!-- Use the class "float-left" in avatar -->
+                                        <div class="avatar float-left">
+                                            <!-- Online or offline -->
+                                            <b class="c-idle"></b>
+                                            <img src="img/user.jpg" alt="" class="img-responsive">
+                                            <!-- Name -->
+                                            <span>Ashok</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <!-- In meta area, first include "name" and then "time" -->
+                                            <div class="chat-meta">Sent
+                                                <span class="float-right">3 hours ago</span>
+                                            </div>
+                                            {فَلَا وَرَبِّكَ لَا يُؤْمِنُونَ حَتَّىٰ يُحَكِّمُوكَ فِيمَا شَجَرَ بَيْنَهُمْ ثُمَّ لَا يَجِدُوا فِي أَنفُسِهِمْ حَرَجًا مِّمَّا قَضَيْتَ وَيُسَلِّمُوا تَسْلِيمًا}
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+            
+                                    <!-- Chat by other. Use the class "by-other". -->
+                                    <li class="by-other">
+                                        <!-- Use the class "float-right" in avatar -->
+                                        <div class="avatar float-right">
+                                            <!-- Online or offline -->
+                                            <b class="c-off"></b>
+                                            <img src="chatPlugin/img/dummy/u4.png" alt="" class="img-responsive">
+                                            <!-- Name -->
+                                            <span>Ravi</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <!-- In the chat meta, first include "time" then "name" -->
+                                            <div class="chat-meta">3 hours ago
+                                                <span class="float-right">Received</span>
+                                            </div>
+                                            {وَلَوْ أَنَّهُمْ صَبَرُوا حَتَّى تَخْرُجَ إِلَيْهِمْ لَكَانَ خَيْرًا لَهُمْ ۚ وَاللَّهُ غَفُورٌ رَحِيمٌ}
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+            
+                                    <li class="by-me">
+                                        <div class="avatar float-left">
+                                            <b class="c-on"></b>
+                                            <img src="img/user.jpg" alt="" class="img-responsive">
+                                            <span>Ashok</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <div class="chat-meta">Seen
+                                                <span class="float-right">4 hours ago</span>
+                                            </div>
+                                            {وَاتَّقُوا يَوْمًا لَا تَجْزِي نَفْسٌ عَنْ نَفْسٍ شَيْئًا وَلَا يُقْبَلُ مِنْهَا شَفَاعَةٌ وَلَا يُؤْخَذُ مِنْهَا عَدْلٌ وَلَا هُمْ يُنْصَرُونَ}.
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+            
+                                    <li class="by-other">
+                                        <!-- Use the class "float-right" in avatar -->
+                                        <div class="avatar float-right">
+                                            <b class="c-off"></b>
+                                            <img src="chatPlugin/img/dummy/u4.png" alt="" class="img-responsive">
+                                            <span>Ravi</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <!-- In the chat meta, first include "time" then "name" -->
+                                            <div class="chat-meta">3 hours ago
+                                                <span class="float-right">Undelivered</span>
+                                            </div>
+                                            {أَلا إِنَّ لِلَّهِ مَا فِي السَّمَاوَاتِ وَالأَرْضِ أَلاَ إِنَّ وَعْدَ اللَّهِ حَقٌّ وَلَكِنَّ أَكْثَرَهُمْ لاَ يَعْلَمُونَ هُوَ يُحْيِي وَيُمِيتُ وَإِلَيْهِ تُرْجَعُونَ}.
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+            
+                                    <li class="by-me">
+                                        <div class="avatar float-left">
+                                            <b class="c-on"></b>
+                                            <img src="img/user.jpg" alt="" class="img-responsive">
+                                            <span>Ashok</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <div class="chat-meta">Audio
+                                                <span class="float-right">4 hours ago</span>
+                                            </div>
+                                            {وَمَا كَانَ لِمُؤْمِنٍ وَلَا مُؤْمِنَةٍ إِذَا قَضَى اللَّهُ وَرَسُولُهُ أَمْرًا أَن يَكُونَ لَهُمُ الْخِيَرَةُ مِنْ أَمْرِهِمْ ۗ وَمَن يَعْصِ اللَّهَ وَرَسُولَهُ فَقَدْ ضَلَّ ضَلَالًا مُّبِينًا}
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+            
+                                    <li class="by-other">
+                                        <!-- Use the class "float-right" in avatar -->
+                                        <div class="avatar float-right">
+                                            <b class="c-off"></b>
+                                            <img src="chatPlugin/img/dummy/u4.png" alt="" class="img-responsive"> 
+                                            <span>Ravi</span>
+                                        </div>
+            
+                                        <div class="chat-content">
+                                            <!-- In the chat meta, first include "time" then "name" -->
+                                            <div class="chat-meta">3 hours ago
+                                                <span class="float-right">Image</span>
+                                            </div>
+                                            {وَلَوْ أَنَّهُمْ صَبَرُوا حَتَّى تَخْرُجَ إِلَيْهِمْ لَكَانَ خَيْرًا لَهُمْ ۚ وَاللَّهُ غَفُورٌ رَحِيمٌ}                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+
+                                    
+            
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-light">
+                            <!-- Chat button -->
+                            <form>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary b-0 mr-2"><i class="icon-image"></i></button>
+                                    <button class="btn btn-outline-secondary b-0 mr-2"><i class="icon-face-glasses"></i></button>
+                                    <input class="form-control" placeholder="Type your message..." type="text">
+
+                                    <span class="input-group-btn ml-2">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of caht content -->
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+ 
+
+
+                            </div>
+
+						
+                    </div>
+					
+                </div>
+
+
+                
+            </div>
+         
+                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="deleteModalLabel">الغاء معاد</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    هل متأكد من الغاء هذا المعاد؟
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="showDangerToast()">حذف</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+		 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <!--<script>window.jQuery || document.write('<script src="src/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>-->
+        <script src="plugins/popper.js/dist/umd/popper.min.js"></script>
+        <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+        <script src="plugins/screenfull/dist/screenfull.js"></script>
+        <script src="plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="plugins/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="plugins/moment/moment.js"></script>
+        <script src="plugins/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+		
+        <script src="plugins/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="plugins/datedropper/datedropper.min.js"></script>
+        <script src="js/form-picker.js"></script>
+        <!-- nice scroll -->
+        <script src="js/jquery.nicescroll.min.js"></script>
+        
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>-->
+		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+
+         <script src="dist/js/theme.min.js"></script>
+		 
+        <script src="js/alerts.js"></script>
+        
+        <script>
+        
+        $(".scrol").niceScroll({
+        cursorcolor:"#ddd",
+        cursorwidth:"8px"
+        });
+        </script>
+
+
+
+        <script>(function($,d){$.each(readyQ,function(i,f){$(f)});$.each(bindReadyQ,function(i,f){$(d).bind("ready",f)})})(jQuery,document)</script>
+
+        
+		 
+    <script>
+        $(document).ready(function () {
+            $('#advanced_table').DataTable({
+                "language": {
+                    "url": "http://cdn.datatables.net/plug-ins/1.10.20/i18n/Arabic.json"
+                }
+            });
+        });
+    </script>
+	
+    <script>
+$(".telephone").intlTelInput({
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
+});
+    </script>	
+	
+
+    </body>
+</html>

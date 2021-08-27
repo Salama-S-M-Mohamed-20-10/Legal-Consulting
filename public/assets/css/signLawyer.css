@@ -1,0 +1,102 @@
+.signLawyer
+{
+    position: relative;
+    background-image: url('../images/pexels-henry-&-co-1939485.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(226, 230, 234);
+    height: 600px;
+    text-align: right;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+.signLawyer .box
+{
+    background-color: #fff;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 10px;
+}
+.signLawyer .box input
+{
+    text-align: right;
+}
+.signLawyer .box label
+{
+    color: rgb(136, 131, 131);
+    font-weight: bold;
+}
+.signLawyer .form-check-input[type=checkbox]
+{
+    margin-left: 165px;
+}
+.signLawyer button.enter
+{
+    background-color: #FC427B;
+    border: none;
+    width: 30%;
+    text-align: center;
+    margin-right: 108px;
+    margin-top: 17px;
+}
+.signLawyer .forget
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.signLawyer .facebook
+{
+    background-color: rgb(66, 103, 178);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+.signLawyer .facebook p
+{
+    display: inline;
+    width: 100%;
+    margin-left: 10px;
+}
+.signLawyer .facebook a
+{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+.signLawyer .google
+{
+    background-color: red;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+.signLawyer .google p
+{
+    display: inline;
+    width: 100%;
+    margin-left: 25px;
+}
+.signLawyer .google a
+{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+.signLawyer .signUp
+{
+    text-align: center;
+    margin-top: 15px;
+}

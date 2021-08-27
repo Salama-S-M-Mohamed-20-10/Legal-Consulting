@@ -1,0 +1,155 @@
+:root{
+    --main-color:#FC427B
+}
+
+/* start specializiation  */
+.time
+{
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/pexels-henry-&-co-1939485.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.time .overlay{
+    background-color: rgb(217 228 232 / 50%);;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.time .content{
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 1px;
+    height: 565px;
+}
+.time .spcial
+{
+    height: auto;
+}
+.time .content:before
+{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background-color: var(--main-color);
+}
+.time .inf{
+    display: flex
+}
+.time .inf .ex
+{
+    text-align: right;
+    padding-right: 15px
+}
+.time .inf .one{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 30px;
+    padding: 10px 0;
+    padding-left: 10px;
+    height: fit-content;
+}
+.time .inf .two
+{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+    flex:1;
+    padding: 10px 0;
+    padding-left: 10px;
+    top: 280px;
+    height: fit-content;
+}
+.time .inf h2
+{
+    font-weight: inherit;
+    color: #6f6f6c 
+}
+.time .inf p
+{
+    color: rgb(139, 132, 132);
+}
+.time .inf .one::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 20px;
+    right: -41px;
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
+.time .inf .two::before
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 20px;
+    left: -41px;
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
+.time .inf .one .ex::before{
+    content: '';
+    position: absolute;
+    border: solid;
+    border-width:15px ;
+    border-color: transparent transparent transparent #fff;
+    width: 0;
+    height: 0;
+    top: 16px;
+    right:-30px;
+}
+.time .inf .two .ex::before{
+    content: '';
+    position: absolute;
+    border: solid;
+    border-width:15px ;
+    border-color: transparent #fff transparent transparent;
+    width: 0;
+    height: 0;
+    top: 16px;
+    left:-30px;
+}
+
+.search button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(93, 213, 243);
+    border: rgb(37,204,247);
+    outline: mediumturquoise;
+    transition: ease-in-out 0.3s;
+    margin-bottom: 15px;
+
+}
+.search button:hover,
+.search button:focus{
+    background-color: rgb(37,204,247);
+
+}
+ .search button .fa-search-location {
+    text-align: left !important;
+    color: #FC427B;
+    margin-right: 15px;
+}

@@ -1,0 +1,328 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>المحامين</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" href="../lawyerDashboard/favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/bootstrap/dist/css/bootstrap-rtl.min.css">
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/icon-kit/dist/css/iconkit.min.css">
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/ionicons/dist/css/ionicons.min.css">
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/perfect-scrollbar/css/perfect-scrollbar.css">
+
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+
+        <link rel="stylesheet" href="../lawyerDashboard/plugins/jquery-toast-plugin/dist/jquery.toast.min.css">
+
+        <link rel="stylesheet" href="../lawyerDashboard/dist/css/theme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+		
+        <script src="../lawyerDashboard/src/js/vendor/modernizr-2.8.3.min.js"></script>
+		
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+            <header class="header-top" header-theme="light">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between">
+                        <div class="top-menu d-flex align-items-center">
+                            <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+                            <button type="button" id="navbar-fullscreen" class="nav-link"><i class="ik ik-maximize"></i></button>
+                        </div>
+						
+                        <div class="top-menu d-flex align-items-center userDrops">
+                             <div class="dropdown mr-20">
+                                <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar" src="../lawyerDashboard/img/user.png" alt=""></a>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="profile.html"><i class="ik ik-user dropdown-icon"></i> الملف الشخصى</a>
+                                    <a class="dropdown-item" href="changePw.html"><i class="ik ik-lock dropdown-icon"></i> تغيير كلمة السر</a>
+                                    <a class="dropdown-item" href="login.html"><i class="ik ik-power dropdown-icon"></i> تسجيل خروج</a>
+                                </div>
+                            </div>
+ 
+                             <div class="dropdown spDroplist">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="avatar" src="../lawyerDashboard/img/egypt.png" alt=""></a>
+                            <div class="dropdown-menu dropdown-menu-left animated bounceInDown">
+								<!--<a class="dropdown-item" href="#"><i class="flag-icon flag-icon-in"></i> عربي<img src="img/saudi-arabia.png" alt=""></a>-->
+								<a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> English<img src="../lawyerDashboard/img/united-states.png" alt=""></a>
+							</div>
+                            </div>
+							
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ik ik-bell"></i><span class="badge bg-danger">3</span></a>
+                                <div class="dropdown-menu dropdown-menu-left notification-dropdown" aria-labelledby="notiDropdown">
+                                    <h4 class="header">التنبيهات</h4>
+                                    <div class="notifications-wrap">
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-users"></i> 
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم تسجيل محامي</span> 
+                                                <span class="media-content">2021-10-04 - 8 AM ...</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-check"></i> 
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم تسجيل مستخدم</span> 
+                                                <span class="media-content">2021-10-04 - 8 AM ...</span>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="media">
+                                            <span class="d-flex">
+                                                <i class="ik ik-users"></i> 
+                                            </span>
+                                            <span class="media-body">
+                                                <span class="heading-font-family media-heading">تم تسجيل محامي</span> 
+                                                <span class="media-content">2021-10-04 - 8 AM ...</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="footer"><a href="notfication.html">عرض كل التنبيهات</a></div>
+                                </div>
+                            </div>
+							
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-wrap">
+                <div class="app-sidebar colored">
+                    <div class="sidebar-header">
+                        <a class="header-brand" href="cpIndex.html">
+                            <div class="logo-img">
+                               <img src="../lawyerDashboard/src/img/logo.png" class="header-brand-img" alt="محاميك"> 
+                            </div>
+                            <span class="text">محاميك</span>
+                        </a>
+                        <button type="button" class="nav-toggle"><i data-toggle="expanded" class="ik ik-toggle-right toggle-icon"></i></button>
+                        <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
+                    </div>
+
+                    
+                    <div class="sidebar-content">
+                        <div class="nav-container">
+                            <nav id="main-menu-navigation" class="navigation-main">
+                                <div class="nav-item ">
+                                    <a href="cpIndex.html"><i class="ik ik-home"></i><span>الرئيسية</span></a>
+                                </div>
+
+                                <div class="nav-item">
+                                    <a href="notfication.html"><i class="ik ik-bell"></i><span>التنبيهات</span>
+                                        <span class="badge bg-danger">3</span>
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="nav-item active has-sub">
+                                    <a href="javascript:void(0)"><i class="ik ik-users"></i><span>عرض المستخدمين</span></a>
+                                    <div class="submenu-content">
+                                        <a href="listLawyer.html" class="menu-item">المحامين</a>
+                                        <a href="listUser.html" class="menu-item">المستخدمين</a>
+                                    </div>
+                                </div>
+								
+                            </nav>
+                        </div>
+                    </div>
+ 
+					
+                </div>
+                <div class="main-content">
+                    <div class="container-fluid">
+
+						<div class="page-header">
+							<div class="row align-items-end">
+								<div class="col-lg-8">
+									<div class="page-header-title">
+										<i class="ik ik-briefcase bg-blue"></i>
+										<div class="d-inline">
+											<h2>عرض المحامين</h2>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<nav class="breadcrumb-container" aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item">
+												<a href="cpIndex.html"><i class="ik ik-home"></i></a>
+											</li>
+
+											<li class="breadcrumb-item active" aria-current="page">المحامين</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+
+
+                            <!-- Customer overview start -->
+                            <div class="row mt-40">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>المحامين</h3>
+                                        <div class="card-header-right">
+											<ul class="list-unstyled card-option">
+                                                <li><i class="ik ik-minus minimize-card"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-body progress-task">
+                                        <div class="dd" data-plugin="nestable">
+
+                                        <div class="table-responsive">
+                                            <table id="advanced_table" class="table table-striped table-bordered table-hover mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>م</th>
+                                                        <th>إسم المحامي</th>
+                                                        <th>تاريخ التسجيل</th>
+                                                        <th>حالة الحساب</th>
+                                                        <th>إدارة</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td>امير حسني عطالله</td>
+                                                        <td class="text-center">2021-11-22</td>
+                                                        <td class="text-center"><strong class="badge bg-success text-light">مفعل</strong></td>
+                                                        <td class="text-center">
+															<div class="action-btns">
+																<a data-toggle="tooltip" data-placement="top" title="ملف المحامي" class="btn btn-icon btn-dark btn-view-profile" href='profileLawyer.html'><i class="ik ik-user f-16 mr-10"></i></a>
+																<a data-toggle="modal" data-target="#deleteModal" class="btn btn-icon btn-danger btn-add-Delete" href='#'><i class="ik ik-trash-2 f-16 mr-10" data-toggle="tooltip" data-placement="top" title="حذف" ></i></a>
+															</div>
+														</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td>أحمد الشنواني</td>
+                                                        <td class="text-center">2019-11-23</td>
+                                                        <td class="text-center"><strong class="badge bg-success text-light">مفعل</strong></td>
+                                                        <td class="text-center">
+															<div class="action-btns">
+																<a data-toggle="tooltip" data-placement="top" title="ملف المحامي" class="btn btn-icon btn-dark btn-view-profile" href='cp-profile.html'><i class="ik ik-user f-16 mr-10"></i></a>
+																<a data-toggle="modal" data-target="#deleteModal" class="btn btn-icon btn-danger btn-add-Delete" href='#'><i class="ik ik-trash-2 f-16 mr-10" data-toggle="tooltip" data-placement="top" title="حذف" ></i></a>
+															</div>
+														</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td>سامر السيد</td>
+                                                        <td class="text-center">2019-11-24</td>
+                                                        <td class="text-center"><strong class="badge bg-danger text-light">معطل</strong></td>
+                                                        <td class="text-center">
+															<div class="action-btns">
+																<a data-toggle="tooltip" data-placement="top" title="ملف المحامي" class="btn btn-icon btn-dark btn-view-profile" href='cp-profile.html'><i class="ik ik-user f-16 mr-10"></i></a>
+																<a data-toggle="modal" data-target="#deleteModal" class="btn btn-icon btn-danger btn-add-Delete" href='#'><i class="ik ik-trash-2 f-16 mr-10" data-toggle="tooltip" data-placement="top" title="حذف" ></i></a>
+															</div>
+														</td>
+                                                    </tr>
+ 
+ 
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- Customer overview end -->
+
+
+ 
+
+
+						
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+        
+                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="deleteModalLabel">حذف المحامي</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    هل متأكد من عملية حذف هذا المحامي ؟
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="showDangerToast()">حذف</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+		 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <!--<script>window.jQuery || document.write('<script src="src/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>-->
+        <script src="../lawyerDashboard/plugins/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../lawyerDashboard/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../lawyerDashboard/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+        <script src="../lawyerDashboard/plugins/screenfull/dist/screenfull.js"></script>
+        <script src="../lawyerDashboard/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../lawyerDashboard/plugins/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="../lawyerDashboard/plugins/moment/moment.js"></script>
+        <script src="../lawyerDashboard/plugins/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+		
+        <script src="../lawyerDashboard/plugins/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="../lawyerDashboard/plugins/datedropper/datedropper.min.js"></script>
+        <script src="../lawyerDashboard/js/form-picker.js"></script>
+
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"></script>-->
+		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+
+         <script src="../lawyerDashboard/dist/js/theme.min.js"></script>
+		 
+        <script src="../lawyerDashboard/js/alerts.js"></script>
+
+		 
+    <script>
+        $(document).ready(function () {
+            $('#advanced_table').DataTable({
+                "language": {
+                    "url": "http://cdn.datatables.net/plug-ins/1.10.20/i18n/Arabic.json"
+                }
+            });
+        });
+    </script>
+	
+    <script>
+$(".telephone").intlTelInput({
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
+});
+    </script>	
+	
+    </body>
+</html>

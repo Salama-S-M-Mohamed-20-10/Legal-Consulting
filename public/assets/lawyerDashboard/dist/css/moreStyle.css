@@ -1,0 +1,40 @@
+
+body
+{
+    font-family: 'Changa', sans-serif;
+}
+
+.dropdown-toggle::after {
+    display: contents
+}
+.dropdown-menu .dropdown-item {
+    text-align: right;
+    color: #3c454e;
+}
+.wrapper .page-wrap .main-content .page-header .page-header-title h2 {
+    font-weight: bold;
+    color: black
+}
+.wrapper .page-wrap .main-content .page-header .page-header-title span
+{
+    color: black
+}
+.wrapper .page-wrap .main-content .page-header .page-header-title i {
+    background: #25CCF7;
+}
+.wrapper .header-top .top-menu .dropdown .dropdown-menu.notification-dropdown .header,
+.wrapper .header-top .top-menu .dropdown .dropdown-menu.notification-dropdown .notifications-wrap .media .media-body,
+.wrapper .page-wrap .main-content .page-header .page-header-title,
+.wrapper .page-wrap .app-sidebar.colored .sidebar-content .nav-container .navigation-main .nav-item a {
+    text-align: right
+}
+/* for scroll chat member */
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    height: 664px;
+    overflow: overlay;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    border-right: 1px solid #ddd;
+}

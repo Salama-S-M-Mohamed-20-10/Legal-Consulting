@@ -1,0 +1,465 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* start NavBar*/
+.navBar
+{   
+    background-color: rgb(37,204,247);
+    z-index: 2;
+    padding: 10px 0;
+    font-weight:bold;
+    width: 100%;
+}
+.navBar .navbar-brand
+{
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}
+.navBar .navbar-brand img
+{
+    width: 55px;
+}
+.navBar .navbar-nav
+{
+    margin-left: auto;
+}
+.navBar ul li a
+{
+        position: relative;
+        color: #fff;
+        margin-left: 20px;
+        transition: ease-in-out 0.3s;
+}
+.navBar ul li a::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin: 0 0;
+    transition: 0.3s;
+}
+.navBar ul li a::after
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #FC427B !important;
+    transform : rotate(90deg);
+    transform-origin:right;
+    transition: 0.3s;
+    top: 39px;
+    transition: ease-in-out 0.3s;
+}
+.navBar ul li a:hover::after
+{
+    transform : rotate(0deg);
+    right: 50%;
+    transform: translate(50%);
+}
+.navBar ul li a:hover::before
+{
+    transform : rotate(0deg);
+    left: 50%;
+    transform: translate(-50%);
+}
+.navBar .navbar-toggler
+{
+    color: transparent;
+}
+.navbar-nav .nav-link
+{
+    text-align: center;
+}
+nav .navbar .navbar-toggler.collapse{
+    outline:none !important;
+    color: #fff !important;
+    border: #fff !important;
+}
+.navBar .navbar-toggler span
+{
+    display: block;
+    background-color: #FC427B;
+    width: 30px;
+    height: 3px;
+    transition: 0.3s;
+}
+.navBar .navbar-toggler span.two
+{
+    margin: 7px 0;
+}
+
+/* end NavBar*/
+/* start header */
+.header
+{
+    height: 789px;
+    position: relative;
+}
+@media (max-width: 991px){
+    .header{
+        display: none
+    }
+}
+.header .clip
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: rgb(37,204,247,.6);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.header .carousel,
+.header .carousel-inner,
+.header .carousel-item
+{
+    height: 100%;
+}
+.header .carousel-inner img
+{
+    height: 789px;
+}
+.header .carousel-caption
+{
+    z-index: 4;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    margin-bottom: 400px;
+    margin-left: 170px;
+    width: 100%;
+}
+/* end header*/
+/* start choice spec */
+.choice
+{
+    padding: 70px 0;
+}
+.choice h2
+{
+    position: relative;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.choice h2::before
+{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #FC427B;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.choice .button
+{
+    text-align: right;
+}
+.choice .button a
+{
+    background-color: rgb(37,204,247);
+    outline: none;
+    border: rgb(37,204,247);
+}
+.choice h3
+{
+    text-align: center;
+}
+/* end choice spec */
+
+/* start select lawyer */
+.select
+{
+    padding: 40px 0px;
+}
+.select .inputs
+{
+    padding: 30px 0 50px 0;
+}
+.select .inputs .input-group-text
+{
+    background-color: transparent;
+    border: transparent;
+}
+.select .inputs .input-group-text .fas
+{
+    font-size: 30px;   
+    color: #FC427B;
+    padding-right: 10px;
+}
+.select .inputs select option
+{
+    position: fixed;
+    color: rgb(0, 112, 205);
+}
+.select .inputs .search
+{
+    text-align: center;
+    padding-top: 50px;
+    width: auto;
+}
+.select .inputs .search button
+{
+    padding: 10px 50px;
+    font-size: 23px;
+    width: 20%;
+    background-color: rgb(37,204,247);
+    border: rgb(37,204,247);
+    outline: none;
+}
+@media (max-width: 1199px){
+    .select .inputs .search button{
+        width: 54%;
+    }
+}
+
+.select .inputs .search button .fa-search-location
+{
+    font-size: 30px;
+    text-align: left !important;
+    color: #FC427B;
+    margin-right: 15px;
+}
+/* end select lawyer */
+/* start footer */
+.fot
+{
+    background-color: rgb(37,204,247);
+    color: white;
+}
+.fot .info
+{
+    padding: 50px 0;
+}
+/* sec1 */
+.fot .app h2
+{
+    font-size: 20px;
+}
+.fot .app img
+{
+    width: 190px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.fot .info ul
+{
+    list-style: none;
+    padding-top: 30px;
+}
+.fot .info ul.social
+{
+    padding-left: 0px;
+    text-align: left;
+}
+.fot .info ul li
+{
+    display: inline-block;
+    margin-right: 29px;
+}
+.fot .info ul li a i
+{
+    font-size: 40px;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+.fot .info ul li a i:hover
+{
+    color: #FC427B;
+}
+
+/* sec2 */
+.fot .help h2
+{
+    font-size: 20px;
+}
+.fot .help ul li
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.fot .help ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+.fot .help ul li a:hover
+{
+    text-decoration: underline;
+    color: #FC427B;
+}
+/* sec3 */
+.fot .lawyer h2
+{
+    font-size: 20px;
+}
+.fot .lawyer ul li
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.fot .lawyer ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+.fot .lawyer ul li a:hover
+{
+    text-decoration: underline;
+    color: #FC427B;
+}
+/* sec4 */
+.fot .logo h2
+{
+    font-size: 20px;
+}
+.fot .logo ul li
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.fot .logo ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+.fot .logo ul li a:hover
+{
+    text-decoration: underline;
+    color: #FC427B;
+}
+/*sec5 */
+.fot .search h2
+{
+    font-size: 20px;
+}
+.fot .search ul li
+{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.fot .search ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+.fot .search ul li a:hover
+{
+    text-decoration: underline;
+    color: #FC427B;
+}
+/* end footer */
+
+/* constant responsive for foter and dropdwon */ 
+/* dropdown */
+.dropdown button
+{
+    background-color: none;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+}
+.dropdown button:hover 
+{
+    color:white
+}
+ .btn:focus
+{
+    box-shadow: unset
+}
+
+.dropdown-item
+{
+    color: rgb(82, 134, 184)
+}
+.dropdown-item:hover
+{
+    color: rgb(82, 134, 184)
+}
+.dropdown-item i
+{
+    padding-left: 5px
+}
+.navbar-expand-lg,
+.navbar-nav  .dropdown-menu
+{
+    text-align: right;
+    color: turquoise !important
+}
+
+/**  responsive *****/
+
+.fot .info ul.social {
+    padding-left: 20px;
+    text-align: inherit;
+}
+
+.fot .logo a img
+{
+    width: 20%;
+}
+@media (max-width: 991px){
+    .dropdown {
+        text-align:center;
+        padding-left: 33px;
+    }
+    .navbar-nav .dropdown-menu{
+        background-color: unset; 
+        border: unset; 
+        text-align: center;
+        padding-bottom: 30px 
+        }
+    .dropdown-item{
+        color: #fff;
+        font-weight: 600;
+        transition:all 0.3s ease-in-out;
+    }
+    .dropdown-item:hover{
+        background-color:unset;
+        color: #FC427B
+    }
+    } 
+    
+    @media (max-width: 991px){
+        .dash {
+            text-align: -webkit-center;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        .fot .lawyer h2,
+        .fot .logo a img
+        {
+            padding-top: 33px;
+        }
+       
+        } 
+
+        @media (max-width: 767px){
+            .fot .help h2
+            {
+                padding-top: 33px;
+            }
+           
+            } 
+    

@@ -1,0 +1,47 @@
+.success
+{
+    padding: 50px 0
+}
+.success i
+{
+    font-size: 80px;
+    color: #4acd32;
+    margin-bottom: 20px
+}
+.success h2
+{
+    color: #a9a9a9;
+    font-weight: normal
+}
+
+.info .mess i
+{
+    font-size: 25px;
+    padding-left: 15px;
+    color: rgb(37,204,247);
+    margin-bottom: 25px
+}
+.info .mess .fa-calendar
+{
+    padding-left: 19px
+}
+.info .mess span
+{
+    padding: 15px;
+    font-size: 20px;
+    color:#a1a2a2;
+}
+.info .mess span.num
+{
+    color: rgb(37,204,247);
+}
+.detail h3
+{
+    color: #a1a2a2;
+    font-size: 22px;
+}
+.detail p
+{
+    font-size: larger;
+    color: #888888;
+}
